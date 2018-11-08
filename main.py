@@ -81,10 +81,9 @@ def customer(client_connection):
         poemResult = xb.poem(imgurl)
         http_response = poemResult
         print(poemResult)
-
         print(1111111)
         print(param)
-        http_head = 'HTTP/1.x 200 OK\r\nContent-Type: text/plain\r\nConnection:keep-alive\r\n\r\n'
+        http_head = 'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\nConnection: close\r\n\r\n'
 
         http_res_all = http_head + http_response + ''
         print(http_res_all)
