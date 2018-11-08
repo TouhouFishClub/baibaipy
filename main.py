@@ -84,7 +84,7 @@ def customer(client_connection):
 
         print(1111111)
         print(param)
-        http_head = 'HTTP/1.x 200 OK\r\nContent-Type: text/plain\r\n\r\n'
+        http_head = 'HTTP/1.x 200 OK\r\nContent-Type: text/plain\r\nConnection:keep-alive\r\n\r\n'
 
         http_res_all = http_head + http_response + ''
         print(http_res_all)
