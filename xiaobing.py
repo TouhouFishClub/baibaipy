@@ -127,13 +127,13 @@ def poem(imgUrl):
 		'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
 	}
 	imgInfo = upload(toBase64(imgUrl))
-	print(session.cookies)
 	CreateTime = str(int(time.time()))
 	data = {
 		'MsgId':CreateTime+'039',
 		'CreateTime':CreateTime,
 		'Content[imageUrl]':imgInfo
 	}
+	print(data)
 	req = session.post(url=url,headers=headers,data=data)
 	print(req.text)
 	return req.text
