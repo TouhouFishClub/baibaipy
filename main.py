@@ -1,11 +1,7 @@
 import socket
 import threading
-import re
 import random
 import time
-import urllib
-import urllib3
-import os
 import gc
 from urllib.parse import urlparse
 from urllib import parse
