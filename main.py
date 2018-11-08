@@ -10,7 +10,7 @@ import xiaobing as xb
 
 # import time
 
-HOST, PORT = "0.0.0.0", 8888
+HOST, PORT = "0.0.0.0", 10088
 
 
 class Singleton(object):
